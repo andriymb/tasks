@@ -43,9 +43,11 @@ export function EditMode(): React.JSX.Element {
                     }}
                 />
             )}
-            {!editMode && isStudent ?
-                `${userName} is a student`
-            :   `${userName} is not a student`}
+            {!editMode ?
+                isStudent ?
+                    `${userName} is a student`
+                :   `${userName} is not a student`
+            :   ""}
         </div>
     );
 }

@@ -26,7 +26,7 @@ export function MultipleChoiceQuestion({
                 >
                     {options.map((option: string) => (
                         <option key={option} value={option}>
-                            option
+                            {option}
                         </option>
                     ))}
                 </Form.Select>
